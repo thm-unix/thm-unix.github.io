@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/thm-unix/thm-unix.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thm-unix/thm-unix.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Сайт канала Дневник UNIX'оида (a.k.a. thm, TheHackerMan)
+Здесь вы можете узнать какие-либо новости, связанные с каналом YT, а также увидеть мои проекты.
+### Контакты
+Эл. почта: highsierra.2007@gmail.com
+(обращайтесь, если у вас есть идея для нового видео, вы хотите предложить что-либо изменить или нашли баг в моих программах.)<br>
+Страница GitHub: <a href="https://github.com/thm-unix">https://github.com/thm-unix</a><br>
+Канал YT: <a href="https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg">https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg</a>
+### Новости (начиная от 17.05.2021)
+<b>17.05.2021</b> Осуществлен переезд с одного аккаунта GitHub на другой. В репозитории этого аккаунта будут выкладываться новые проекты и обновляться старые.<br><br>
+### Страница с задачами к плейлисту 'Основы Python 3.x.'
+Итоговые задачи/работы выложены на странице:<br>
+<a href="python3_tasks.md">Итоговые задачи/работы</a>
+### Дополнительные материалы к плейлисту 'Записки хакера'
+Подробная теория и список команд к каждому видео:<br>
+<a href="https://drive.google.com/drive/folders/111pKQroEQTjDOYMNxFgo1sa_aIoa_TOo">https://drive.google.com/drive/folders/111pKQroEQTjDOYMNxFgo1sa_aIoa_TOo</a>
