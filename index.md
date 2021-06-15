@@ -11,6 +11,8 @@
 ### Дополнительные материалы к плейлисту 'Записки хакера'
 Подробная теория и список команд к каждому видео:<br>
 <a href="https://drive.google.com/drive/folders/111pKQroEQTjDOYMNxFgo1sa_aIoa_TOo">https://drive.google.com/drive/folders/111pKQroEQTjDOYMNxFgo1sa_aIoa_TOo</a><br>
+### Хакинтош
+<a href="hackintosh/hackintosh">Перейти на страницу...</a><br><br>
 ### Новости (начиная от 17.05.2021)
 <b>13.06.2021</b> На канале YouTube был начат плейлист 'Алгоритмы и структуры данных на Python 3.x'.<br><br>
 <b>2.06.2021</b> Поздравляю, нас уже 200!<br><br>
