@@ -5,7 +5,7 @@
 (обращайтесь, если у вас есть идея для нового видео, вы хотите предложить что-либо изменить или нашли баг в моих программах.)<br>
 Страница GitHub: <a href="https://github.com/thm-unix">https://github.com/thm-unix</a><br>
 Канал YT: <a href="https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg">https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg</a>
-### Страница с задачами к плейлисту 'Основы Python 3.x.'
+### Задачи к плейлистам по Python
 Итоговые задачи/работы выложены на странице:<br>
 <a href="python3_tasks">Итоговые задачи/работы</a>
 ### Дополнительные материалы к плейлисту 'Записки хакера'
