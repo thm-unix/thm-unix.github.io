@@ -13,7 +13,7 @@
 <a href="https://drive.google.com/drive/folders/111pKQroEQTjDOYMNxFgo1sa_aIoa_TOo">https://drive.google.com/drive/folders/111pKQroEQTjDOYMNxFgo1sa_aIoa_TOo</a><br> !-->
 ### Записки хакера
 <b>Видео из плейлиста 'Записки хакера' больше не будут опубликовываться на канале YT. Материал будет представлен в виде статей на этом сайте (подробности читайте в новостях).</b><br>
-<a href="hackersdiary/index">Перейти на страницу</a>
+<a href="hackersnotes/index">Перейти на страницу...</a>
 ### Хакинтош
 <a href="hackintosh/hackintosh">Перейти на страницу...</a><br><br>
 ### Новости (начиная от 17.05.2021)
