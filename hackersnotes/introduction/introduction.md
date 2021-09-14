@@ -2,7 +2,7 @@
 
 <b><i>Содержание</i></b><br>
 <a href="#introduction">1. Введение. Выбор дистрибутива Linux для пентеста.</a><br>
-2. Понятие Live и Persistence. Запись флешки с Kali Linux.<br>
+<a href="#usb">2. Понятие Live и Persistence. Запись флешки с Kali Linux.</a><br>
 3. Первый запуск.<br>
 4. Что сделать после установки?<br>
 5. Подведение итогов.<br>
@@ -22,3 +22,6 @@
 <img src="downloadingkali2.png">
 После выберите архитектуру и скачайте файл наиболее удобным способом (через бразуер/через торрент)
 <img src="downloadingkali3.png" width="50%" height="50%">
+
+<p><a name="usb"></a></p>
+<h2>Понятие Live и Persistence. Запись флешки с Kali Linux.</h2>
