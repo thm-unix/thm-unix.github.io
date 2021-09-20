@@ -34,3 +34,4 @@
 сначала нужно узнать, как называется ваш беспроводной интерфейс в системе. Выполнять команды нужно
 от пользователя <b>root</b> (для этого пропишите в терминале sudo su). Пропишите в терминале:
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">iwconfig</pre> Результатом этой команды будет список беспроводных интерфейсов. Около проводных интерфейсов будет написано 'No wireless extensions':
+<img src="iwconfig_.png">
