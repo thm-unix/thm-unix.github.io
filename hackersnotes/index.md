@@ -9,5 +9,5 @@
 
 ### ~ Атаки на беспроводные сети ~
 <ul>
-  <a href="2/index">Aircrack-ng. Подбор пароля к сети Wi-Fi</a>
+  <a href="2/index">(Aircrack-ng). Подбор пароля к сети Wi-Fi</a>
 </ul>
