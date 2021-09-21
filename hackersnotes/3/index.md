@@ -9,8 +9,8 @@
 <a href="#zip">4. Подбор пароля к *.zip файлу.</a><br>
 <a href="#msoffice">5. Подбор пароля к файлам MS Office.</a><br>
 <a href="#unixpasswd">6. Подбор паролей из /etc/shadow.</a><br>
-<a href="#crackstation">7. Подбор паролей онлайн.</a>
-<a href="#end">8. Подведение итогов. Рекомендации по защите.</a><br>
+<a href="#crackstation">7. Подбор паролей онлайн.</a><br>
+<a href="#end">8. Подведение итогов. Рекомендации по защите. Полезные ссылки.</a><br>
 
 <p><a name="introduction"></a></p>
 <h2>Введение. Требования.</h2>
@@ -56,3 +56,46 @@
 Вернемся к подбору значения MD5. Для этого мы будем использовать программу Hashcat. Когда вы ее запустите, с ключом -h, то увидите сотни хеш-сумм, с которыми программа умеет работать. В самом начале будет 'md5'. Этот режим имеет код 0. Тогда синтаксис команды будет выглядеть следующим образом:
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">hashcat -m 0 -a 0 [md5] [/path/to/wordlist]</pre>, где [md5] - MD5 хеш-сумма (без скобок), [/path/to/wordlist] - путь к словарю паролей (без скобок). После запуска процесса через некоторое время пароль будет успешно подобран:
 <img src="hashcat-md5.png"><br>
+
+<p><a name="zip"></a></p>
+<h2>Подбор пароля к *.zip файлу.</h2>
+В данной части статьи (и последующих) мы будем использовать только John the Ripper. Данная утилита может подбирать значения к практически всем хешам (в т.ч. она может подбирать пароль к хендшейку). Также John the Ripper имеет свой собственный словарь, так что если не указывать путь к словарю, то пароль также может быть подобран. Она имеет возможность поставить перебор на паузу и продолжить его позже. Сейчас же мы будем подбирать пароль к ZIP-файлу. Первым делом преобразуйте архив в хеш:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">zip2john [zip_file] > zip.hash</pre>, где [zip_file] - путь к ZIP-файлу (без скобок).<br>
+После этого запустите перебор:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">john --wordlist=[/path/to/wordlist] --fork=[cores] [/path/to/hash]</pre>, где [/path/to/wordlist] - путь к словарю паролей (без скобок), [cores] - количество ядер процессора, которое вы хотите задействовать (без скобок), [/path/to/hash] - путь к файлу с хешем (без скобок). После подбора вы увидите:
+<img src="john-zip.png"><br>
+
+<p><a name="msoffice"></a></p>
+<h2>Подбор пароля к файлам MS Office</h2>
+Для начала нужно скачать утилиту office2john:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">wget https://raw.githubusercontent.com/openwall/john/bleeding-jumbo/run/office2john.py</pre>
+Далее преобразуйте ваш docx/xlsx/pptx/... файл в хеш:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">python2 office2john.py [office_file] > office.hash</pre>, где [office_file] - путь к файлу MS Office (без скобок).<br>
+И запустите перебор:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">john --wordlist=[/path/to/wordlist] --fork=[cores] [/path/to/hash]</pre>, где [/path/to/wordlist] - путь к словарю паролей (без скобок), [cores] - количество ядер процессора, которое вы хотите задействовать (без скобок), [/path/to/hash] - путь к файлу с хешем (без скобок).
+
+<p><a name="unixpasswd"></a></p>
+<h2>Подбор пароля из /etc/shadow.</h2>
+В UNIX-подобных системах есть файл по пути /etc/shadow. Он содержит зашифрованные пароли пользователей системы. Если вам удалось получить этот файл, то вы можете попробовать перебрать пароли к пользователям из этого файла. John the Ripper также это умеет:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">john --wordlist=[/path/to/wordlist] --fork=[cores] /etc/shadow</pre>, где [/path/to/wordlist] - путь к словарю паролей (без скобок), [cores] - количество ядер процессора, которое вы хотите задействовать (без скобок).
+
+<p><a name="crackstation"></a></p>
+<h2>Подбор паролей онлайн.</h2>
+Альтернативным способом подобрать пароль по хешу может быть сайт <a href="https://crackstation.net" target="_blank">crackstation.net</a>. Там же вы можете скачать словарь паролей Crackstation: либо полный (~15 ГБ), либо human-only (~680 МБ).
+
+<p><a name="end"></a></p>
+<h2>Подведение итогов. Рекомендации по защите. Полезные ссылки.</h2>
+Итак, в этой статье мы разобрали перебор паролей различных файлов, серверов и значения MD5.<br>
+<h3>Полезные ссылки</h3>
+<ul>
+  <li><a href="https://hackware.ru/?p=13801&PageSpeed=noscript">Hackware: Полное руководство по John the Ripper. Ч.4: практика и примеры использования John the Ripper</a></li>
+  <li><a href="https://crackstation.net/">Crackstation</a></li>
+</ul>
+<h3>Рекомендации по защите</h3>
+Для того, чтобы защититься от данного рода атак, необходимо использовать надежные пароли. Пароль должен содержать:
+<ul>
+  <li>строчные латинские буквы (a~z)</li>
+  <li>прописные латинские буквы (A~Z)</li>
+  <li>цифры (0~9)</li>
+  <li>специальные значки</li>
+</ul>, а также <u><b>НЕ</b></u> содержать имена, даты рождения, города, и любую связанную с вами информацию, даже если ее нельзя найти в интернете.
