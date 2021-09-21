@@ -87,8 +87,8 @@
 <h2>Подведение итогов. Рекомендации по защите. Полезные ссылки.</h2>
 <h3>Полезные ссылки</h3>
 <ul>
-  <li><a href="https://hackware.ru/?p=13801&PageSpeed=noscript">Hackware: Полное руководство по John the Ripper. Ч.4: практика и примеры использования John the Ripper</a></li>
-  <li><a href="https://crackstation.net/">Crackstation</a></li>
+  <li><a href="https://hackware.ru/?p=13801&PageSpeed=noscript" target="_blank">Hackware: Полное руководство по John the Ripper. Ч.4: практика и примеры использования John the Ripper</a></li>
+  <li><a href="https://crackstation.net/" target="_blank">Crackstation</a></li>
 </ul>
 <h3>Рекомендации по защите</h3>
 Для того, чтобы защититься от данного рода атак, необходимо использовать надежные пароли. Пароль должен содержать:
