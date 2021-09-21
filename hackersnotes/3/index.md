@@ -40,7 +40,7 @@
 Таким образом, наша команда будет выглядеть так:
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">hydra -l thm -P rockyou.txt ssh://205.166.94.9</pre>
 Теперь просто ждите, пока будет осуществлен подбор пароля. Если пароль будет успешно подобран, то вы получите сообщение такого рода:
-<img src="hydra-ssh.png"><br>
+<img src="hydra-ssh.png" width="70%" height="70%"><br>
 
 <p><a name="md5"></a></p>
 <h2>Подбор значения MD5 (без соли).</h2>
@@ -55,7 +55,7 @@
 -<br>
 Вернемся к подбору значения MD5. Для этого мы будем использовать программу Hashcat. Когда вы ее запустите, с ключом -h, то увидите сотни хеш-сумм, с которыми программа умеет работать. В самом начале будет 'md5'. Этот режим имеет код 0. Тогда синтаксис команды будет выглядеть следующим образом:
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">hashcat -m 0 -a 0 [md5] [/path/to/wordlist]</pre>, где [md5] - MD5 хеш-сумма (без скобок), [/path/to/wordlist] - путь к словарю паролей (без скобок). После запуска процесса через некоторое время пароль будет успешно подобран:
-<img src="hashcat-md5.png"><br>
+<img src="hashcat-md5.png" width="70%" height="70%"><br>
 
 <p><a name="zip"></a></p>
 <h2>Подбор пароля к *.zip файлу.</h2>
@@ -63,7 +63,7 @@
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">zip2john [zip_file] > zip.hash</pre>, где [zip_file] - путь к ZIP-файлу (без скобок).<br>
 После этого запустите перебор:
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">john --wordlist=[/path/to/wordlist] --fork=[cores] [/path/to/hash]</pre>, где [/path/to/wordlist] - путь к словарю паролей (без скобок), [cores] - количество ядер процессора, которое вы хотите задействовать (без скобок), [/path/to/hash] - путь к файлу с хешем (без скобок). После подбора вы увидите:
-<img src="john-zip.png"><br>
+<img src="john-zip.png" width="70%" height="70%"><br>
 
 <p><a name="msoffice"></a></p>
 <h2>Подбор пароля к файлам MS Office</h2>
