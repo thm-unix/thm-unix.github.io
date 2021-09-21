@@ -1,4 +1,4 @@
-<h1>(John the Ripper, Hydra, Hashcat). Подбор пароля к ZIP/MS Office/SSH/MD5/...</h1>
+<h1>(John the Ripper, Hydra, Hashcat). Подбор пароля к SSH/MD5/ZIP/MS Office/...</h1>
 
 <b>Материал предоставлен в ознакомительных и образовательных целях.</b><br>
 
