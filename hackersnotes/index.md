@@ -16,5 +16,5 @@
 ### ~ Атаки на пароли ~
 <ul>
   <li><a href="2/index">(Aircrack-ng). Подбор пароля к сети Wi-Fi</a></li>
-  <li><a href="3/index">(John the Ripper, Hydra, Hashcat). Подбор пароля к ZIP/MS Office/SSH/MD5/...</a></li>
+  <li><a href="3/index">(John the Ripper, Hydra, Hashcat). Подбор пароля к SSH/MD5/ZIP/MS Office/...</a></li>
 </ul>
