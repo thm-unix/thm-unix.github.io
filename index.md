@@ -5,6 +5,11 @@
 (обращайтесь, если у вас есть идея для нового видео, вы хотите предложить что-либо изменить/нашли баг в моих программах или просто по вопросам.)<br>
 Страница GitHub: <a href="https://github.com/thm-unix">https://github.com/thm-unix</a><br>
 Канал YT: <a href="https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg">https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg</a>
+### Проекты
+<ul>
+  <li><a href="projects/backupmachine/index">Backup Machine</a></li>
+  <li><a href="projects/thm-zshtheme/index">thm-zshtheme</a></li>
+</ul>
 ### Задачи к плейлистам по Python
 Итоговые задачи/работы выложены на странице:<br>
 <a href="python3_tasks">Итоговые задачи/работы</a>
