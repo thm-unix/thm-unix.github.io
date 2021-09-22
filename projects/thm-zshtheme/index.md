@@ -7,4 +7,4 @@
 
 
 <a class="github-button" href="https://github.com/thm-unix/thm-zshtheme/archive/HEAD.zip" data-icon="octicon-download" data-size="large" aria-label="Download thm-unix/thm-zshtheme on GitHub">Скачать</a><br>
-<img src="screenshot.png" width="50%" height="50%">
+<img src="screenshot.png">
