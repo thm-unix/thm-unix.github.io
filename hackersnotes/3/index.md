@@ -62,7 +62,8 @@
 В данной части статьи (и последующих) мы будем использовать только John the Ripper. Данная утилита может подбирать значения к практически всем хешам (в т.ч. она может подбирать пароль к хендшейку). Также John the Ripper имеет свой собственный словарь, так что если не указывать путь к словарю, то пароль также может быть подобран. Она имеет возможность поставить перебор на паузу и продолжить его позже. Сейчас же мы будем подбирать пароль к ZIP-файлу. Первым делом преобразуйте архив в хеш:
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">zip2john [zip_file] > zip.hash</pre>, где [zip_file] - путь к ZIP-файлу (без скобок).<br>
 После этого запустите перебор:
-<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">john --wordlist=[/path/to/wordlist] --fork=[cores] [/path/to/hash]</pre>, где [/path/to/wordlist] - путь к словарю паролей (без скобок), [cores] - количество ядер процессора, которое вы хотите задействовать (без скобок), [/path/to/hash] - путь к файлу с хешем (без скобок). После подбора вы увидите:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">john --wordlist=[/path/to/wordlist] --fork=[cores] [/path/to/hash]</pre>, где [/path/to/wordlist] - путь к словарю паролей (без скобок), [cores] - количество ядер процессора, которое вы хотите задействовать (без скобок), [/path/to/hash] - путь к файлу с хешем (без скобок). <br>
+После подбора вы увидите:<br>
 <img src="john-zip.png" width="70%" height="70%">
 
 <p><a name="msoffice"></a></p>
