@@ -18,3 +18,8 @@
   <li><a href="2/index">(Aircrack-ng). Подбор пароля к сети Wi-Fi</a></li>
   <li><a href="3/index">(John the Ripper, Hydra, Hashcat). Подбор пароля к SSH/MD5/ZIP/MS Office/...</a></li>
 </ul>
+
+### ~ Атаки в локальных сетях ~
+<ul>
+  <li><a href="4/index">(Bettercap, net-creds). MITM. Часть 1. Введение в атаку MITM. Перехват данных в локальной сети.</a></li>
+</ul>
