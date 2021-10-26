@@ -121,7 +121,7 @@ HSTS - это просто кука, которую пользователь д�
 <ul>
   <li>Не заходить в свои учетные записи на сайтах в открытых сетях</li>
   <li>Поддерживать безопасность личной сети Wi-Fi, иначе будет равноценна открытой сети</li>
-  <li>Использовать расширение HTTPS Everywhere (<a href="https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp">Chrome Web Store</a> | <a href="https://addons.mozilla.org/en-US/firefox/addon/https-everywhere">Firefox Browser Add-ons</a>)</li>
+  <li>Использовать расширение HTTPS Everywhere (<a href="https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp" target="_blank">Chrome Web Store</a> | <a href="https://addons.mozilla.org/en-US/firefox/addon/https-everywhere" target="_blank">Firefox Browser Add-ons</a>)</li>
 </ul>
 
 Итак, мы познакомились с атакой MITM.<br><br>
