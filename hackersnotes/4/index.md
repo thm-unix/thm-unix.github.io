@@ -93,8 +93,8 @@ HSTS - это просто кука, которую пользователь д�
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">net.sniff on</pre>
 
 <p><a name="netcreds"></a></p>
-<i>(в другом окне терминала)</i>
 <h2>Запускаем net-creds.</h2>
+<i>(в другом окне терминала)</i><br>
 Переходим в директорию с net-creds:
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">cd net-creds</pre>
 Запускаем net-creds:
