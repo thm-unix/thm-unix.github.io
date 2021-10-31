@@ -34,17 +34,17 @@ XSS (Cross Site Scripting, получил аббревиатуру XSS, а не 
 <ul>
   <li>
     <b>Stored XSS</b><br>
-    &nbsp;&nbsp;&nbsp;Пример: на доске объявлений в поле имя ввел <script>alert('Stored XSS')</script> и теперь каждый раз, когда кто-то заходит на страницу его профиля, он видит на экране сообщение 'Stored XSS'
+    &nbsp;&nbsp;&nbsp;Пример: на доске объявлений в поле имя ввел &lt;script&gt;alert('Stored XSS')&lt;/script&gt; и теперь каждый раз, когда кто-то заходит на страницу его профиля, он видит на экране сообщение 'Stored XSS'
   </li>
   
   <li>
     <b>Reflected XSS</b><br>
-    &nbsp;&nbsp;&nbsp;Пример: http://myunsafewebsite.com/store/product.php?id=<script>alert('ReflectedXSS')</script>
+    &nbsp;&nbsp;&nbsp;Пример: http://myunsafewebsite.com/store/product.php?id=&lt;script&gt;alert('ReflectedXSS')&lt;/script&gt;
   </li>
   
   <li>
     <b>DOM-Based XSS</b><br>
-    &nbsp;&nbsp;&nbsp;Пример: http://myunsafewebsite.com/arictle/25/text.html#<script>alert('DOM-BasedXSS')</script>
+    &nbsp;&nbsp;&nbsp;Пример: http://myunsafewebsite.com/arictle/25/text.html#&lt;script&gt;alert('DOM-BasedXSS')&lt;/script&gt;
   </li>
 </ul><br>
 Приведенная выше информация на данный момент нам не особо будет нужна, т.к. безопасность веб-приложений у нас еще не скоро. Для общего развития, можно сказать.
