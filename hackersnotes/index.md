@@ -22,4 +22,5 @@
 ### ~ Атаки в локальных сетях ~
 <ul>
   <li><a href="4/index">(Bettercap, net-creds). MITM. Часть 1. Введение в атаку MITM. Перехват данных в локальной сети.</a></li>
+  <li><a href="5/index">(Ettercap, Burp Suite, BeEF). MITM. Часть 2. Использование Burp Suite в атаках MITM. Подцепление на BeEF.</a></li>
 </ul>
