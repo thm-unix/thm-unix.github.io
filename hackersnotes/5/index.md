@@ -161,6 +161,7 @@ BeEF позволяет практически управлять браузер
 <ul>
   <li><a href="https://cisoclub.ru/rukovodstvo-po-osushhestvleniyu-cross-site-scripting-xss/" target="_blank">Hackware: руководство по осуществлению XSS атаки</a></li>
   <li><a href="https://ru.wikipedia.org/wiki/Межсайтовый_скриптинг" target="_blank">Википедия: межсайтовый скриптинг</a></li>
+  <li><a href="https://hackware.ru/?p=784&PageSpeed=noscript" target="_blank">Базовое использование BeEF</a></li>
 </ul>
 
 <h3>Рекомендации по защите.</h3>
