@@ -100,9 +100,6 @@ XSS (Cross Site Scripting, получил аббревиатуру XSS, а не 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В списке выберите Specific address и в выпадающем меню выберите IP-адрес, который начинается на 192.168.0/1.
   </li>
   <li>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;В списке выберите Specific address и в выпадающем меню выберите IP-адрес, который начинается на 192.168.0/1.
-  </li>
-  <li>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Во вкладке Request Handling поставьте галочку “Support invisible proxying”
   </li>
   <li>
