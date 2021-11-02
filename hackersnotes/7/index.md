@@ -40,7 +40,10 @@
 
 <p><a name="phishingpage"></a></p>
 <h2>Готовим фишинговую страницу и запускаем Apache.</h2>
-Первым делом вам нужно написать фишинговую страницу на HTML. Можно использовать HTML/CSS/JavaScript/... Она должна каким-либо образом передавать вам данные, которые ввел атакуемый. Мы же для примера будем использовать страницу It works! Положите ее по пути <i>/var/www/html/</i><br><br>
+Первым делом вам нужно написать фишинговую страницу на HTML. Можно использовать HTML/CSS/JavaScript/... Она должна каким-либо образом передавать вам данные, которые ввел атакуемый. Мы же для примера будем использовать страницу It works! 
+
+Положите ее по пути <i>/var/www/html/</i>:
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">sudo cp -R mycoolwebsite/* /var/www/html/</pre>, где mycoolwebsite - директория с вашим веб-сайтом.
 
 Затем запустите Apache:
 <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background: rgb(240, 240, 240) none repeat scroll 0% 0%; color: rgb(68, 68, 68);">sudo systemctl start apache2</pre>
