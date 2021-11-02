@@ -77,4 +77,30 @@
 
 <p><a name="result"></a></p>
 <h2>Смотрим на результат.</h2>
-Атакующий набирает www.wikipedia.org, но вместо Википедии открывается страница It Works!
+Атакующий набирает www.yandex.ru, а вместо Яндекса открывается страница It works!, вместо которой вполне могла быть фишинговая страница.
+Я также добавил еще пару страниц для того, чтобы показать, что работает это практически везде. Практически, потому что, далеко не у всех сайтов главная страница открывается только по https://. Эти страницы просто напросто не добавлены в тот самый список сайтов, которые открываются только по https:// в браузере. В то же время, например, с Википедией такой трюк не прокатывает и она просто не открывается. Проверить, будет ли работать, можно на сайте HSTS Preload (см. полезные ссылки)
+
+<img src="itworks.png">
+
+
+<p><a name="end"></a></p>
+<h2>Подведение итогов. Рекомендации по защите. Полезные ссылки.</h2>
+<h3>Полезные ссылки.</h3>
+<ul>
+  <li><a href="https://ru.wikipedia.org/wiki/DNS" target="_blank">Википедия: DNS</a></li>
+  <li><a href="https://ru.wikipedia.org/wiki/DNS-сервер" target="_blank">Википедия: DNS-сервер</a></li>
+  <li><a href="https://ru.wikipedia.org/wiki/DNS_spoofing" target="_blank">Википедия: DNS Spoofing</a></li>
+  <li><a href="https://losst.ru/ustanovka-ssl-sertifikata-apache-ot-lets-encrypt">Losst: Установка SSL-сертификата на сервер Apache</a></li>
+  <li><a href="https://www.youtube.com/watch?v=cHsqZAN0Yr4">YouTube: DNS Spoofing своими руками</a></li>
+  <li><a href="https://hstspreload.org" target="_blank">HSTS Preload</a></li>
+</ul>
+
+<h3>Рекомендации по защите.</h3>
+<ul>
+  <li>Не использовать открытые сети Wi-Fi</li>
+  <li>Поддерживать безопасность личной сети Wi-Fi, иначе будет равноценна открытой сети</li>
+  <li>Использовать расширение HTTPS Everywhere (<a href="https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp" target="_blank">Chrome Web Store</a> | <a href="https://addons.mozilla.org/en-US/firefox/addon/https-everywhere" target="_blank">Firefox Browser Add-ons</a>)</li>
+</ul>
+
+Итак, мы познакомились с DNS Spoofing.<br><br>
+<a href="../index">Назад к списку статей...</a>
