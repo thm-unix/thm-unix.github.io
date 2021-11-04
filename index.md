@@ -2,7 +2,7 @@
 Здесь вы можете узнать какие-либо новости, связанные с каналом YT, а также увидеть мои проекты.<br>
 
 ### 📒 Контакты 
-Эл. почта: highsierra.2007@mail.ru или highsierra.2007@gmail.com
+Эл. почта: <a href="mailto:highsierra.2007@mail.ru">highsierra.2007@mail.ru</a> или <a href="mailto:highsierra.2007@gmail.com">highsierra.2007@gmail.com</a>
 (обращайтесь, если у вас есть идея для нового видео, вы хотите предложить что-либо изменить/нашли баг в моих программах (об этом лучше пишите в Issues проекта) или просто по вопросам.)<br>
 🔨 Страница GitHub: <a href="https://github.com/thm-unix" target="_blank">https://github.com/thm-unix</a><br>
 ▶ Канал YT: <a href="https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg" target="_blank">https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg</a><br>
