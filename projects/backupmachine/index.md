@@ -6,5 +6,6 @@
 <a href="https://github.com/thm-unix/BackupMachine" target="_blank">Ссылка на проект на GitHub</a> <b>(см. Installation Guide)</b><br>
 
 <a class="github-button" href="https://github.com/thm-unix/BackupMachine/archive/HEAD.zip" data-icon="octicon-download" data-size="large" aria-label="Download thm-unix/BackupMachine on GitHub">Скачать (v.0.2)</a><br><br>
-<img src="dark.png" width="40%" height="40%"><br>
-<img src="cli.png" width="55%" height="55%">
+<img src="cli.png" width="55%" height="55%"><br>
+<img src="dark.png" width="50%" height="50%">
+
