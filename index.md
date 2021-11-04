@@ -11,6 +11,8 @@
   <li><a href="projects/backupmachine/index">Backup Machine</a></li>
   <li><a href="projects/thm-zshtheme/index">thm-zshtheme</a></li>
 </ul>
+<h3>Баг трекер</h3>
+<a href="bugtracker/index">Перейти на страницу...</a>
 <h3>Задачи к плейлистам по Python</h3>
 Итоговые задачи/работы выложены на странице:<br>
 <a href="python3_tasks">Итоговые задачи/работы</a>
