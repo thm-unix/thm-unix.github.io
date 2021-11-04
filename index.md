@@ -4,7 +4,9 @@
 ### 📒 Контакты 
 Эл. почта: highsierra.2007@mail.ru или highsierra.2007@gmail.com
 (обращайтесь, если у вас есть идея для нового видео, вы хотите предложить что-либо изменить/нашли баг в моих программах (об этом лучше пишите в Issues проекта) или просто по вопросам.)<br>
-Страница GitHub: <a href="https://github.com/thm-unix">https://github.com/thm-unix</a><br>
+🔨 Страница GitHub: <a href="https://github.com/thm-unix" target="_blank">https://github.com/thm-unix</a><br>
+▶ Канал YT: <a href="https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg" target="_blank">https://www.youtube.com/channel/UCzDZ8_7JEgaoCG8Y3tMAlVg</a><br>
+🦜 Twitter: <a href="https://twitter.com/thm_UNIX" taeget="_blank">https://twitter.com/thm_UNIX</a>
 <h3>📐 Проекты</h3> 
 <ul>
   <li><a href="projects/count/index">Count!</a></li>
