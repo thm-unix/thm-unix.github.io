@@ -7,8 +7,11 @@
 </ul>
 
 ### Backup Machine
-Всего багов: 1<br>
-Нерешенных багов: 0
+Всего багов: 2<br>
+Нерешенных багов: 1
+<ul>
+  <li><a href="https://github.com/thm-unix/BackupMachine/issues/2">https://github.com/thm-unix/BackupMachine/issues/2</a></li>
+</ul>
 
 ### devdiscover
 Всего багов: 0<br>
