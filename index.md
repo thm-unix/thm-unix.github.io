@@ -9,6 +9,7 @@
 🦜 Twitter: <a href="https://twitter.com/thm_UNIX" taeget="_blank">https://twitter.com/thm_UNIX</a>
 <h3>📐 Проекты</h3> 
 <ul>
+  <li><a href="https://plainde.org/">plainDE</li>
   <li><a href="projects/count/index">Count!</a></li>
   <li><a href="projects/backupmachine/index">Backup Machine</a></li>
   <li><a href="projects/thm-zshtheme/index">thm-zshtheme</a></li>
