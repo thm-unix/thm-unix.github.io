@@ -1,4 +1,12 @@
 ## Баг трекер
+### plainDE
+Всего багов: 5<br>
+Нерешенных багов: 2<br>
+<ul>
+  <li><a href="https://github.com/plainDE/plainPanel/issues/8">https://github.com/plainDE/plainPanel/issues/8</a></li>
+  <li><a href="https://github.com/plainDE/plainPanel/issues/1">https://github.com/plainDE/plainPanel/issues/1</a></li>
+</ul>
+
 ### Count!
 Всего багов: 1<br>
 Нерешенных багов: 1
