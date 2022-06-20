@@ -12,8 +12,9 @@
 <h3>📐 Проекты</h3> 
 <ul>
   <li><a href="https://plainde.org/">plainDE</a></li>
-  <li><a href="projects/count/index">Count!</a></li>
   <li><a href="projects/backupmachine/index">Backup Machine</a></li>
+  <li><a href="projects/count/index">Count!</a></li>
+  <li><a href="projects/fake-gnome-keyring/index">Fake GNOME Keyring</a></li>
   <li><a href="projects/thm-zshtheme/index">thm-zshtheme</a></li>
 </ul>
 <h3>🏷 Баг трекер</h3>
