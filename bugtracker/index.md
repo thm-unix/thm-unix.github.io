@@ -8,6 +8,10 @@
   <li><a href="https://github.com/plainDE/plainControlCenter/issues/1">https://github.com/plainDE/plainControlCenter/issues/1</a></li>
 </ul>
 
+### Fake GNOME Keyring
+Всего багов: 0<br>
+Нерешенных багов: 0
+
 ### Count!
 Всего багов: 1<br>
 Нерешенных багов: 1
