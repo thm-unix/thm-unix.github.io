@@ -7,3 +7,6 @@ Fake GNOME Keyring - поддельное окно разблокировки с
 <a href="https://github.com/thm-unix/fake-gnome-keyring" target="_blank">Ссылка на проект на GitHub</a> <b>(см. Installation)</b><br>
 
 <a class="github-button" href="https://github.com/thm-unix/fake-gnome-keyring/archive/HEAD.zip" data-icon="octicon-download" aria-label="Download thm-unix/fake-gnome-keyring on GitHub">Скачать (v.0.1)</a>
+
+<img src="setup.png" width="600">
+<img src="unlock.png" width="600">
