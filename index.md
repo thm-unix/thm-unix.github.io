@@ -16,6 +16,10 @@
   <li><a href="projects/fake-gnome-keyring/index">Fake GNOME Keyring</a></li>
   <li><a href="projects/thm-zshtheme/index">thm-zshtheme</a></li>
 </ul>
+
+<h3>📓 Блог</h3>
+<a href="blog/index">Перейти на страницу...</a>
+
 <h3>🏷 Баг трекер</h3>
 <a href="bugtracker/index">Перейти на страницу...</a>
 <h3>📝 Задачи к плейлистам по Python</h3>
