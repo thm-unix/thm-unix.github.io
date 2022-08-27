@@ -77,3 +77,67 @@ FreeBSD и всех необходимых пакетов (я использую
 
 10.5 Оставляем дефолтный DNS (Tab, Enter)<br>
 <img src="network-5.png" width="480" height="266">
+
+11. Выбираем часовой пояс
+<img src="timezone-1.png" width="480" height="266">
+
+12. Дата & время (пропускаем)
+<img src="date.png" width="480" height="266">
+<img src="time.png" width="480" height="266">
+
+13. Выбираем службы, которые будут запускаться автоматически (sshd для SSH и ntpd, ntpdate для установки времени по сети)
+<img src="configuration.png" width="480" height="266">
+
+14. Опции безопасности (оставляем все выключенным)
+<img src="security.png" width="480" height="266">
+
+15. Добавляем своего пользователя (не забываем включить пользователя в группу wheel, чтобы можно было выполнять команды с помощью sudo)
+<img src="users-1.png" width="480" height="266">
+<img src="users-2.png" width="480" height="266">
+<img src="users-3.png" width="480" height="266">
+
+16. Выбираем пункт Exit и перезагружаемся
+<img src="final-config.png" width="480" height="266">
+<img src="finished.png" width="480" height="266">
+<img src="reboot.png" width="480" height="266">
+
+
+## Подготовка системы
+<ul>
+  <li>После загрузки системы заходим под пользователя root.</li>
+  <li>Чтобы устанавливать пакеты из репозиториев, нужна утилита pkg. Изначально в системе она не установлена. Пропишите `pkg`, после чего согласитесь на установку pkg.</li>
+  <li>Пропишите `pkg update` для обновления репозиториев.</li>
+  <li>Установите nano для более удобного редактирования конфигов (<code>pkg install nano</code>)</li>
+</ul>
+
+
+## Установка & конфигурация Samba сервера
+1. Пропишите `pkg search samba`, найдите самую последнюю доступную версию Samba (в моем случае, samba413)
+2. Установите Samba сервер (`pkg install samba413`)
+3. Создаем директорию по пути /storage: `mkdir /storage`
+4. Даем всем права на нее: `chmod 777 /storage`
+5. Пишем конфиг по пути /usr/local/etc/smb4.conf
+```
+[global]
+  workgroup = WORKGROUP
+  server string = Samba Server
+  log file = /var/log/samba-log.%m
+  max log size = 500
+  map to guest = Bad Password
+  
+[storage]
+  path = /storage
+  comment = Storage
+  writable = yes
+  public = yes
+  create mask = 0777
+  directory mask = 0777
+```
+4. Редактируем файл /etc/rc.conf: `nano /etc/rc.conf`<br>
+Дописать в конец `samba_server_enable="YES"`
+
+5. Создаем пользователя для Samba сервера: `adduser`
+6. Задаем пароль, указывая который, будем заходить на сервер: `smbpasswd -a username`, где username - имя только что созданного пользователя
+
+
+## 
