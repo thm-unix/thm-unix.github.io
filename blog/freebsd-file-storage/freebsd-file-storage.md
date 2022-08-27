@@ -9,4 +9,71 @@ FreeBSD и всех необходимых пакетов (я использую
 
 ## Установка FreeBSD
 1. <a href="https://freebsd.org/">Скачиваем FreeBSD</a>
-2. 
+
+2. Загружаемся с образа, нажимаем Enter (или ждем 10 секунд)
+<img src="bootscreen.png" width="480" height="266">
+
+3. После загрузки выбираем Install
+<img src="installer-firststep.png" width="480" height="266">
+
+4. Раскладку оставляем дефолтную
+<img src="keymap.png" width="480" height="266">
+
+5. Указываем имя хоста. В моем случае, storage.
+<img src="hostname.png" width="480" height="266">
+
+6. Выбираем нужные компоненты (пробел, чтобы выбрать пункт)
+Я выбрал lib32 для 32-битных библиотек и ports для портов
+<img src="components.png" width="480" height="266">
+
+7. Далее, разметка диска. В данном примере будем использовать ZFS. Считается, что ZFS довольна требовательна к ресурсам, однако опыт показал, что 4 ГБ ОЗУ хватает (на сайте FreeBSD сказано, что 1 ГБ - самый минимум)
+
+7.1. Выбираем Auto (ZFS)<br>
+<img src="zfs.png" width="480" height="266"><br>
+
+7.2. Переходим в раздел Pool Type/Disks<br>
+<img src="zfs-2.png" width="480" height="266">
+
+7.3. Теперь нужно выбрать тип массива дисков.
+<ul>
+  <li>stripe - простое объединение (также используется для 1 диска)</li>
+  <li>mirror - зеркало (если один диск сломается, данные останутся на втором)</li>
+  <li>RAID10 - объединение зеркал в один zpool</li>
+  <li>RAIDz1 - объединение дисков (1 диск сломается, данные останутся на остальных)</li>
+  <li>RAIDz2 - объединение дисков (2 диска сломается, данные останутся на остальных)</li>
+  <li>RAIDz3 - объединение дисков (3 диска сломается, данные останутся на остальных)</li>
+</ul>
+В данном примере буду использовать простой stripe<br>
+<img src="zfs-3.png" width="480" height="266">
+
+7.4. Выбираем нужный диск(-и)<br>
+<img src="zfs-4.png" width="480" height="266">
+
+7.5. Выбираем пункт Install<br>
+<img src="zfs-5.png" width="480" height="266">
+
+7.6. Подтверждаем, что диск выбран правильно<br>
+<img src="zfs-6.png" width="480" height="266">
+
+8. Идет процесс распаковки файлов...
+<img src="archive-extraction.png" width="480" height="266">
+
+9. Устанавливаем пароль пользователя root
+<img src="root-password.png" width="480" height="266">
+
+10. Настраиваем сеть
+
+10.1. Выбираем сетевой интерфейс<br>
+<img src="network-1.png" width="480" height="266">
+
+10.2 Соглашаемся на IPv4<br>
+<img src="network-2.png" width="480" height="266">
+
+10.3 Соглашаемся на DHCP<br>
+<img src="network-3.png" width="480" height="266">
+
+10.4 Отказываеся от IPv6<br>
+<img src="network-4.png" width="480" height="266">
+
+10.5 Оставляем дефолтный DNS (Tab, Enter)<br>
+<img src="network-5.png" width="480" height="266">
