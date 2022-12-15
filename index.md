@@ -11,6 +11,7 @@
 <h3>📐 Проекты</h3> 
 <ul>
   <li><a href="https://plainde.org/">plainDE</a></li>
+  <li><a href="projects/sbomgr/index">sbomgr</a></li>
   <li><a href="projects/flashcards/index">Flashcards</a></li>
   <li><a href="projects/fake-gnome-keyring/index">Fake GNOME Keyring</a></li>
   <li><a href="projects/backupmachine/index">Backup Machine</a></li>
