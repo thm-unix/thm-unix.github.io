@@ -54,7 +54,7 @@ EndSection
 `xrandr --output VIRTUALX --right-of HOSTDSP`, где VIRTUALX - название виртуального дисплея, HOSTDSP - название основного дисплея.
 
 11. Запустите x11vnc сервер: <br>
-`x11vnc -rfbauth ~/.vnc/passwd -multiptr -display :0 -clip VWxVH+HW+0`, где VW - ширина виртуального дисплея, VH - высота виртуального дисплея, HW - ширина вашего экрана.
+`x11vnc -rfbauth ~/.vnc/passwd -multiptr -display :0 -nodpms -clip VWxVH+HW+0`, где VW - ширина виртуального дисплея, VH - высота виртуального дисплея, HW - ширина вашего экрана.
 
 P.S. Последние 6 шагов нужно выполнять снова после каждой перезагрузки, поэтому лучше вписать их в .xinitrc, либо автозагрузку DE.
 
