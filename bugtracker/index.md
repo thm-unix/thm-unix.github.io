@@ -1,12 +1,13 @@
 ## Баг трекер
 ### plainDE
-Всего багов: 13<br>
-Нерешенных багов: 4<br>
+Всего багов: 14<br>
+Нерешенных багов: 5<br>
 <ul>
   <li><a href="https://github.com/plainDE/plainPanel/issues/8">https://github.com/plainDE/plainPanel/issues/8</a></li>
   <li><a href="https://github.com/plainDE/plainPanel/issues/1">https://github.com/plainDE/plainPanel/issues/1</a></li>
   <li><a href="https://github.com/plainDE/plainPanel/issues/20">https://github.com/plainDE/plainPanel/issues/20</a></li>
   <li><a href="https://github.com/plainDE/plainPanel/issues/29">https://github.com/plainDE/plainPanel/issues/29</a></li>
+  <li><a href="https://github.com/plainDE/plainPanel/issues/30">https://github.com/plainDE/plainPanel/issues/30</a></li>
 </ul>
 
 ### Fake GNOME Keyring
