@@ -3,16 +3,15 @@
 
 ### 📒 Контакты 
 E-mail: <a href="mailto:highsierra.2007@gmail.com">highsierra.2007@gmail.com</a>
-(обращайтесь, если у вас есть идея для нового видео, вы хотите предложить что-либо изменить/нашли баг в моих программах (об этом лучше пишите в Issues проекта) или просто по вопросам.)<br>
+(обращайтесь, если у вас есть идея для нового видео, вы хотите предложить что-либо изменить/нашли баг в моих программах (об этом лучше пишите в Issues проекта) или просто по вопросам).<br>
 🔨 Страница GitHub: <a href="https://github.com/thm-unix" target="_blank">https://github.com/thm-unix</a><br>
 🔨 Страница NotABug: <a href="https://notabug.org/thm-unix" target="_blank">https://notabug.org/thm-unix</a><br>
 ▶ Канал YT: <a href="https://www.youtube.com/@thmUNIX" target="_blank">https://www.youtube.com/@thmUNIX</a><br>
-🦜 Twitter: <a href="https://twitter.com/thm_UNIX" taeget="_blank">https://twitter.com/thm_UNIX</a>
 <h3>📐 Проекты</h3> 
 <ul>
   <li><a href="https://plainDE.github.io/">plainDE</a></li>
+  <li><a>iMemo</a></li>
   <li><a href="projects/sbomgr/index">sbomgr</a></li>
-  <li><a href="projects/flashcards/index">Flashcards</a></li>
   <li><a href="projects/fake-gnome-keyring/index">Fake GNOME Keyring</a></li>
   <li><a href="projects/backupmachine/index">Backup Machine</a></li>
   <li><a href="projects/count/index">Count!</a></li>
