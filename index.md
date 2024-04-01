@@ -10,8 +10,9 @@ E-mail: <a href="mailto:highsierra.2007@gmail.com">highsierra.2007@gmail.com</a>
 <h3>📐 Проекты</h3> 
 <ul>
   <li><a href="https://plainDE.github.io/">plainDE</a></li>
-  <li><a>iMemo</a></li>
+  <li><a href="https://github.com/thm-unix/iMemo">iMemo</a></li>
   <li><a href="projects/sbomgr/index">sbomgr</a></li>
+  <li><a href="https://github.com/thm-unix/yt-playlist-entries">yt-playlist-entries</a></li>
   <li><a href="projects/fake-gnome-keyring/index">Fake GNOME Keyring</a></li>
   <li><a href="projects/backupmachine/index">Backup Machine</a></li>
   <li><a href="projects/count/index">Count!</a></li>
