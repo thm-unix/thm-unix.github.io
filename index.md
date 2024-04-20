@@ -27,7 +27,8 @@ E-mail: <a href="mailto:highsierra.2007@gmail.com">highsierra.2007@gmail.com</a>
 <a href="bugtracker/index">Перейти на страницу...</a>
 
 <h3>🍏 Хакинтош</h3>
-<a href="https://github.com/thm-unix/OC-A317-51G-78XF">Acer Aspire A317-51G-78XF</a>
+<a href="https://github.com/thm-unix/OC-A317-51G-78XF">Acer Aspire A317-51G-78XF</a><br>
+<a href="https://github.com/thm-unix/OC-B590-20206">Lenovo B590 (20206!)</a>
 
 <h3>📝 Задачи к плейлистам по Python</h3>
 <a href="python-tasks/index">Перейти на страницу...</a>
