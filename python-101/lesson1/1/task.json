@@ -1,0 +1,9 @@
+{
+	"title": "Приветствие пользователя",
+	"text": "Напишите программу, которая принимает на ввод имя пользователя и выводит строку \"Hello, имя\".",
+	"test_suite": [
+		["username", "Hello, username"],
+		["Linus Torvalds", "Hello, Linus Torvalds"],
+		["Steve Jobs", "Hello, Steve Jobs"]
+	]
+}

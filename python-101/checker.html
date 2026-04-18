@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../style.css">
+		<script src="https://cdn.jsdelivr.net/pyodide/v0.29.3/full/pyodide.js"></script>
+		<script src="checker.js"></script>
+	</head>
+	<body>
+		<div class="wide-content-div">
+			<h2 id="task-title">Загрузка...</h2>
+			<p id="task-text">Загрузка...</p>
+			<textarea id="code-box" class="code-box" placeholder="Наберите свой код здесь..."></textarea><br><br>
+			<button onclick="runTests()" class="check-task">Отправить на проверку!</button>
+			<div id="output" class="output"></div>
+		</div>
+	</body>
+</html>
