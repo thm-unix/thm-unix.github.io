@@ -1,0 +1,8 @@
+{
+	"title": "Анкета",
+	"text": "Напишите программу, которая спрашивает у пользователя имя и возраст, и выводит строку \"My name is (имя) and I am (возраст) years old.\" (скобки не требуются).",
+	"test_suite": [
+		["Alice\n20", "My name is Alice and I am 20 years old."],
+		["Bob\n19", "My name is Bob and I am 19 years old."]
+	]
+}
